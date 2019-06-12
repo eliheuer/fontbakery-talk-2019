@@ -8,7 +8,8 @@ W, H, M = 1344, 768, 64
 # EDGE #########################################################################
 def edge():
     #960, 704
-    stroke(1,0,0)
+    stroke(1)
+    strokeWidth(2)
     fill(None)
     rect(M, M, W-(2*M), H-(2*M))
 
@@ -18,10 +19,10 @@ def grid():
     strokeWidth(2)
     stpX, stpY = 0, 0
     incX, incY = M, M
-    for x in range(41):
+    for x in range(19):
         polygon((M+stpX, M), (M+stpX, H-M))
         stpX += incX
-    for y in range(25):
+    for y in range(10):
         polygon((M, M+stpY), (W-M, M+stpY))
         stpY += incY
 
@@ -38,12 +39,12 @@ edge() # Toggle for safe area
 
 fill(1)
 stroke(None)
-fontSize(256)
+fontSize(M*4)
 #tracking()
-text("FONT BAKERY", M, M*12)
+text("FONT BAKErY", M,(M*7))
 fontSize(40)
 #tracking(0)
-#text("Quality Assurance for Font Families", M+170, M*18)
+text("QUALITY ASSURANCE FOR FONT FAMILIES", M, M*2)
 #saveImage("fontbakery-00.png")
 
 # PAGE ONE #####################################################################
