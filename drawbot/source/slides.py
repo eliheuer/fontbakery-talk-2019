@@ -1,3 +1,4 @@
+
 #  BBBBBBD*    *BBBBBBBBD      DBBBD*   DBBD  *BBD  *BBD *BBBBBBBBD     DBBBBBD*   DBBBBBBBBBD*
 # *BBB* *BBB*  DBBD   DBBD   *BBD*DBB*  DBB*   BBD   BBD DBBD   BBB*   BBBD**DBB* *BD**BBB**DD
 # *BBD   *BBB* BBB   *BBB*  *BBD   *BB* DBB*  *BBD   BBD BBB  *DBB*   BBB*    DBB*     BBD
@@ -146,6 +147,15 @@ fill(1)
 stroke(None)
 fontSize(M)
 image("images/jacobinmag-sm.jpg", (100, 100), alpha=1)
+
+
+new_page()
+grid() # Toggle for grid view
+edge() # Toggle for safe area
+fill(1)
+stroke(None)
+fontSize(M)
+image("images/unix.jpg", (-300, -430), alpha=1)
 
 
 new_page()
