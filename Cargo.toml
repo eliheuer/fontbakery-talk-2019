@@ -5,3 +5,5 @@ authors = ["Eli Heuer <elih@member.fsf.org>"]
 edition = "2018"
 
 [dependencies]
+
+rusttype = "0.7.7"
